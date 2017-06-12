@@ -1,0 +1,91 @@
+@import "bootstrap/custom";
+@import "~bootstrap/scss/bootstrap";
+@import "bootstrap/utilities";
+
+html {
+  background: url(../images/background.jpg) #314152 no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-size:15px;
+  color:#FFF;
+  background:transparent;
+}
+
+h1 {
+  font-size:3.4rem;
+  font-family:ProximaNova-Black,sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-style: italic;
+}
+
+p {
+  font-style: italic;
+  a {
+    color:#fff;
+    font-weight:bold;
+  }
+}
+
+ul {
+  li {
+    font-style: italic;
+  }
+}
+
+.logo-md {
+  width:9rem;
+  height:auto;
+}
+
+.logo-sm {
+  width:5rem;
+  height:auto;
+}
+
+.link-lg {
+  font-size:2.2rem;
+  font-family:ProximaNova-Black,sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#fff;
+  &:hover {
+    color:#fff;
+    text-decoration:none;
+  }
+}
+
+.icon-chevron-right:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.icon-chevron-right:before {
+  content: "\e903";
+}
+
+@media (max-width: 1200px) {
+  .link-lg {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size:2.6rem;
+  }
+}
